@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mapa Interactivo Nicaragua</title>
+  <style>
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body{
+      background-color: antiquewhite;
+    }
+    
+    img{
+      display: block;
+      margin: 10px auto;
+      
+    }
+   
+    .resultado{     
+      background-color: #fff;
+      padding: 20px;      
+      width: 80%;
+      height: 100%;
+      margin: 10px auto;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.603);
+    }
+
+    iframe{
+      width: 100%;
+      border: 1px dashed #000;
+      height: 500px;      
+    }
+
+    .titulo-resultado{
+      color: chocolate;
+    }    
+
+  </style>
+</head>
+<body>  
+  <div class="mapa-nicaragua">
+    <img src="img/mapa-nicaragua.jpg" alt="mapa de nicaragua" usemap="#mapa-nicaragua">
+    <map name="mapa-nicaragua">
+      <area shape="poly" coords="218,170,191,151,227,113,234,116,256,71,235,37,253,21,282,38,324,26,325,38,377,5,390,12,376,22,392,68,364,179,246,152,220,172" href="paginas/raan.html" alt="raan" target="frame">
+
+      <area shape="poly" coords="149,182,131,154,154,139,164,137,173,98,221,65,233,44,240,62,252,75,243,100,228,114,202,129,201,143,153,183" href="paginas/jinotega.html" alt="jinotega" target="frame">
+    </map>
+
+    <div class="resultado">
+      <h1 class="titulo-resultado">Resultados del mapa de Nicaragua</h1>
+      <iframe src="" frameborder="1" name="frame"></iframe>
+    </div>
+
+  </div>
+</body>
+</html>
